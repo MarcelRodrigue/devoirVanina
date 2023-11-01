@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=League+Spartan:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>AI-ART</title>
+</head>
+<body>
+    
+<header>
+    <nav>
+        <div class="logo">AI-<span>ART</span></div>
+        <ul class="mobile_collaps">
+            <l1><a href="#">Home</a></l1>
+            <l1><a href="#">About</a></l1>
+            <l1><a href="#">How it works</a></l1>
+        </ul>
+        <div class="contact btn1">contact</div>
+    </nav>
+    <section class="hero">
+      <h1>
+        Your go to website for art recommendation.
+      </h1> 
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatibus sit voluptatum consequatur. Magni, sapiente. Ad facilis rerum molestias nesciunt! Placeat quaerat reiciendis inventore laboriosam impedit? Accusamus corrupti ut exercitationem?
+      </p>
+      <div class="btn_container">
+        <button class="btn1">Explore Art</button>
+        <h3>Our mission <i class="fa-solid fa-arrow-right"></i></h3>
+      </div>
+    </section>
+</header>
+<section class="img_section">
+<img src="./assets/art museum.jpg" alt="" srcset="">
+</section>
+
+<section class="chatbot">
+    <div class="chatHead">
+        <div class="left">
+            <p>chatbot</p>
+            <h2 class="art_close_bot"><div class="circle"></div> <span>ai-art support bot</span></h2>
+        </div>
+        <i class="fa-solid fa-chevron-down fa-flip-vertical"></i>
+    </div>
+    <div class="response">
+        <div class="conversation">
+            <div class="aiResponse message" id="airesponse_message">Hey im vanina your art recomendation system how can i help ?</div>
+            <div class="aiResponse message hide" id="writing">writing....</div>
+            
+            
+        </div>
+        <div class="input">
+            <input type="text" placeholder="enter your promt" id="input_promt">
+            <button class="btn1 input_btn" id="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16"> <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/> </svg></button>
+
+        </div>
+    </div>
+</section>
+
+<script src="./app.js"></script>
+</body>
+</html>

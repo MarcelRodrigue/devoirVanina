@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color:#fff;
+    gap: 3rem;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+
+}
+nav .logo{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 900;
+    font-family: agbalumo;
+
+
+
+}
+nav .logo span{
+    color: rgb(255, 136, 0);
+    font-weight: 900;
+    font-family: agbalumo;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-weight: bold;
+}
+nav ul a {
+    color: #333;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 3rem;
+}
+.hero h1{
+    font-family: Roboto condensed;
+    font-size: 3rem;
+    text-align: center;
+    width: 60%;
+
+}
+.hero p {
+width: 80%;
+text-align: center;
+}
+img{
+    width: 100%;
+}
+.img_section{
+    padding: 2rem;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+}
+.btn1{
+    background-color: rgb(255, 136, 0);
+    border: none;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact{
+    padding: auto;
+}
+.chatbot{
+    background-color: #333;
+    cursor: pointer;
+    color: #fff;
+    width: 20rem;
+    height: 3rem;
+    font-size: .7rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 5rem;
+    padding: 1rem .7rem;
+    border-radius: 10px;
+ 
+
+}
+.circle{
+    width: .5rem;
+    height: .5rem;
+    background-color: green;
+    border-radius: 50%;
+}
+.left{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: .5rem;
+}
+.left p{
+    text-align: start;
+}
+.left h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.chatbot i{
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+
+.chatbot .chatHead{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+.chatbot .response{
+    display: none;
+    opacity: 0;
+    position: relative;
+}
+.chatbot.active{
+    height: 20rem;
+
+}
+.chatbot.active .response{
+    display: block;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+} 
+
+.chatbot.active .response input{
+    width: 100%;
+    padding: .7rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;  
+}
+.chatbot.active .response .input{
+    position: absolute;
+    top: 15rem;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+
+}
+.input_btn{
+    padding: .7rem;
+
+}
+.chatbot.active .response .message{
+    color: #fff;
+    padding: 1rem;
+    margin: .5rem;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+
+}
+.chatbot.active .response .aiResponse{
+    background-color: rgb(27, 108, 215);
+    border-bottom-right-radius: 30px;
+
+
+}
+
+.chatbot.active .response .promt{
+    background-color: rgb(27, 215, 55);
+    border-bottom-left-radius: 30px;
+
+    
+}
+.chatbot.active .response .conversation{
+    height: 13rem;
+    overflow-y: auto;
+}
+.hide{
+    display: none;
+    opacity:0 ;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+    background-color: #ffffff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #c8c8c8;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+  
